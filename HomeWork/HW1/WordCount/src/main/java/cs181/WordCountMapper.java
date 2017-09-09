@@ -9,6 +9,8 @@ import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
+//Worked with Patrick McDonough
+
 /**
  * Word Count Mapper 
  * Receives lines of text, splits each line into words, and generates key, value pairs. Where 
@@ -34,7 +36,7 @@ public class WordCountMapper extends Mapper<LongWritable, Text, Text, IntWritabl
 	     * "Google History" (the Google stop words): http://www.ranks.nl/stopwords
 	     * 
 	     * */
-	    	String[] stopWordsArray = new String[]{"i","a","about","an","are","as","at","be","by","for","from",
+	    	String[] stopWordsArray = new String[]{"i","a","about","an","and,","are","as","at","be","by","for","from",
 	    											"how","in","is","it","of","on","or","that","the","this","to",
 	    											"was","what","when","where","who","with","the"};
 	    /* Convert Array into a List of Strings */
