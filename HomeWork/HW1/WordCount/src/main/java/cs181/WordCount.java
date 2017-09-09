@@ -9,6 +9,9 @@ import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
         
+
+// Worked with Patrick McDonough
+
 public class WordCount {
             
 	public static void main(String[] args) throws Exception {
@@ -27,8 +30,8 @@ public class WordCount {
 	    job.setOutputValueClass(IntWritable.class);
 	        
 	    job.setMapperClass(WordCountMapper.class);
-	    job.setReducerClass(WordCountReduce.class);
 	    job.setCombinerClass(WordCountReduce.class);
+	    job.setReducerClass(WordCountReduce.class);
 	        
 	    job.setInputFormatClass(TextInputFormat.class);
 	    job.setOutputFormatClass(TextOutputFormat.class);
