@@ -5,6 +5,8 @@ import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
+//Worked with Patrick McDonough
+
 /**
  * Word Count Reducer 
  *
