@@ -74,6 +74,7 @@ def main():
         for sketch in sketches:
             totals.merge(sketch)
 
+        #testing on hashtags
         print "#WorldSeries2017", totals.estimate("#WorldSeries2017")
         print "#Halloween", totals.estimate("#Halloween")
 

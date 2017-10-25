@@ -24,6 +24,7 @@ class CountMinSketch(object):
     # list of array storing hash seed   (mmh3 + seed ) % w 
 
     def __init__(self, width, depth) :
+        super(CountMinSketch, self).__init__()
         self.width = width
         self.depth = depth
         self.cm = [[0]*width]*depth
@@ -63,11 +64,13 @@ class CountMinSketch(object):
         return cm3
 
 
-# Testing part
+# # Testing part
+# width, depth = compute_width_depth(0.01, 0.01)
 # sketch = CountMinSketch(width, depth)
 # sketch.increment("one")
 # sketch.increment("two")
 # sketch.increment("one")
+# sketch.increment("two")
 # sketch.increment("three")
 
 
