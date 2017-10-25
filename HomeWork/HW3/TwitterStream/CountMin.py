@@ -1,4 +1,7 @@
 #!/usr/bin/env python
+
+# Partners on this assignment: Patrick McDonough and Annalise Ko
+
 import sys
 import time
 import pyspark
